@@ -59,7 +59,7 @@ func GetFlags(dir string, args []string) (map[string]string, error) {
 
 // date returns the UTC date formatted in RFC 3339 layout.
 func date() string {
-	return time.Now().UTC().Format(time.RFC3339)
+	return time.Now().Format(time.RFC3339)
 }
 
 // versionFromFile looks for a file named VERSION in dir if it exists and
